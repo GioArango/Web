@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta charset="utf-8">
+	<title>Aprendiendo JQuery</title>
+	
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/01-selectores.js"></script>
+	<script type="text/javascript" src="js/02-eventos.js"></script>
+
+	<style type="">
+		#caja{
+			width: 250px;
+			height: 250px;
+			border: 2px solid black;
+			background: green;
+			transition: 300ms all;
+			margin-top: 10px;
+		}
+		/*
+		#caja:hover{
+			background: red;
+			cursor:pointer;
+		}*/
+
+		input{
+			padding: 10px;
+			width: 300px;
+			font-size: 20px;
+		}
+
+		#datos{
+			border: 4px dashed black;
+			padding: 10px;
+			width: 250px;
+			height: 50px;
+			margin-top: 10px;
+			display: none;
+		}
+
+		#sigueme{
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			display: block;
+			background: yellow;
+			opacity: 0.5;
+			border-radius: 999px;
+		}
+	</style>
+	
+</head>
+<body>
+	<h1>¡Aprendiendo JQuery! - EVENTOS</h1>
+	
+	<form>
+		<input type="text" name="name" id="nombre"/>
+	</form>
+
+	<div id="sigueme"></div>
+
+	<div id="datos"></div>
+
+	<div id="caja">
+		soy una caja
+	</div>
+</body>
+</html>
