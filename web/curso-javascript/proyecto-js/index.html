@@ -6,8 +6,28 @@
 
 	<!--estilos css-->
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
+
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+
+	<!--Slider-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<!-- Moment js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+	<!-- Mis scripts -->
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
+	<div id="selector-theme">
+		<div id="to-green"></div>
+		<div id="to-red"></div>
+		<div id="to-blue"></div>
+	</div>
 	<section id="global">
 
 		<!--CABECERA-->
@@ -32,44 +52,17 @@
 
 		<!--SLIDER-->
 		<div id="slider">
-			
+				<div class="bxslider">
+						<div><img src="img/hojas.jpg" title="Hojas"></div>
+						<div><img src="img/rojo.jpg" title="Rojo"></div>
+						<div><img src="img/cielo.jpg" title="Cielo"></div>
+				</div>
 		</div>
 
 		<!--CONTENIDO-->
 		<section id="content">
 			<div id="post">
-				<article class="post">
-					<h2>Titulo del Articulo</h2>
-					<span class="date">Fecha de publicacion</span>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis sem hendrerit, euismod nisl a, ultricies leo. Sed eleifend felis ut diam lacinia, vitae porttitor erat pellentesque. Donec ac condimentum nibh, non sagittis ex. In cursus interdum augue, at scelerisque augue sodales sollicitudin. Donec varius ante nec tempus sollicitudin. Nam a orci sit amet justo eleifend vestibulum. Duis aliquam dignissim tincidunt. Aenean enim velit, dapibus ac fringilla lacinia, semper in diam. Duis mauris velit, maximus non euismod lobortis, pellentesque in purus. Aenean sit amet accumsan neque. Proin ac pretium libero. Nunc porta leo sed rhoncus vestibulum.
-
-						Mauris et massa ac arcu rhoncus pulvinar a accumsan quam. Quisque porttitor nisl vitae orci bibendum sagittis. Integer tincidunt aliquam nisl ut venenatis. Ut feugiat vel risus eget facilisis. Donec dapibus malesuada urna, pretium laoreet massa facilisis ac. Nunc magna nunc, malesuada at tortor commodo, condimentum aliquet diam. Duis lorem arcu, dignissim at sem porta, varius malesuada ipsum.
-					</p>
-					<a href="#" class="button-more">Leer más</a>
-				</article>
-
-				<article class="post">
-					<h2>Titulo del Articulo</h2>
-					<span class="date">Fecha de publicacion</span>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis sem hendrerit, euismod nisl a, ultricies leo. Sed eleifend felis ut diam lacinia, vitae porttitor erat pellentesque. Donec ac condimentum nibh, non sagittis ex. In cursus interdum augue, at scelerisque augue sodales sollicitudin. Donec varius ante nec tempus sollicitudin. Nam a orci sit amet justo eleifend vestibulum. Duis aliquam dignissim tincidunt. Aenean enim velit, dapibus ac fringilla lacinia, semper in diam. Duis mauris velit, maximus non euismod lobortis, pellentesque in purus. Aenean sit amet accumsan neque. Proin ac pretium libero. Nunc porta leo sed rhoncus vestibulum.
-
-						Mauris et massa ac arcu rhoncus pulvinar a accumsan quam. Quisque porttitor nisl vitae orci bibendum sagittis. Integer tincidunt aliquam nisl ut venenatis. Ut feugiat vel risus eget facilisis. Donec dapibus malesuada urna, pretium laoreet massa facilisis ac. Nunc magna nunc, malesuada at tortor commodo, condimentum aliquet diam. Duis lorem arcu, dignissim at sem porta, varius malesuada ipsum.
-					</p>
-					<a href="#" class="button-more">Leer más</a>
-				</article>
-
-				<article class="post">
-					<h2>Titulo del Articulo</h2>
-					<span class="date">Fecha de publicacion</span>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis sem hendrerit, euismod nisl a, ultricies leo. Sed eleifend felis ut diam lacinia, vitae porttitor erat pellentesque. Donec ac condimentum nibh, non sagittis ex. In cursus interdum augue, at scelerisque augue sodales sollicitudin. Donec varius ante nec tempus sollicitudin. Nam a orci sit amet justo eleifend vestibulum. Duis aliquam dignissim tincidunt. Aenean enim velit, dapibus ac fringilla lacinia, semper in diam. Duis mauris velit, maximus non euismod lobortis, pellentesque in purus. Aenean sit amet accumsan neque. Proin ac pretium libero. Nunc porta leo sed rhoncus vestibulum.
-
-						Mauris et massa ac arcu rhoncus pulvinar a accumsan quam. Quisque porttitor nisl vitae orci bibendum sagittis. Integer tincidunt aliquam nisl ut venenatis. Ut feugiat vel risus eget facilisis. Donec dapibus malesuada urna, pretium laoreet massa facilisis ac. Nunc magna nunc, malesuada at tortor commodo, condimentum aliquet diam. Duis lorem arcu, dignissim at sem porta, varius malesuada ipsum.
-					</p>
-					<a href="#" class="button-more">Leer más</a>
-				</article>
+				<!-- Cargar post desde un Json -->
 			</div>
 			<aside id="sidebar">
 				<div id="about">
@@ -106,6 +99,7 @@
 	</section>
 	<footer id="footer">
 		Master en JavaScript
+		<a href="#" class="subir">Ir arriba</a>
 	</footer>
 </body>
 </html>
